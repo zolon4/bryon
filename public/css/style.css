@@ -1,0 +1,23 @@
+body {
+  padding-top: 50px;
+  background-color: #EAB15D;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+
+h1 {
+  font-size: 100px;
+}
+
+p {
+  font-size: 25px;
+}
