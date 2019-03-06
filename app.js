@@ -15,19 +15,14 @@ const fetchXml = async url => {
 }
 
 const parseReponse = items => {
-  try {
-    const newsItems = items.map(function(i) {
-      return {
-        title: i.title[0],
-        description: i.description[0],
-        image: i.image[0].url[0],
-        url: i.link[0]
-      }
-    })
-    return newsItems
-  } catch (e) {
-    console.log(e)
-  }
+  return items.map(function(i) {
+    return {
+      title: i.title[0],
+      description: i.description[0],
+      image: i.image[0].url[0],
+      url: i.link[0]
+    }
+  })
 }
 
 const newsXml = "https://www.news.com.au/content-feeds/latest-news-technology/"
