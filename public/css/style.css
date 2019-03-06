@@ -13,11 +13,14 @@ main {
   color: white;
 }
 
-
 h1 {
   font-size: 100px;
 }
 
 p {
   font-size: 25px;
+}
+
+.card {
+  background: #DA4105;
 }
