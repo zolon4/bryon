@@ -7,6 +7,11 @@ const modules = require("./modules")
 
 const newsXml = "https://www.news.com.au/content-feeds/latest-news-technology/"
 
+
+app.get('/', (req, res) => {
+  res.send("do you come from the land down unda?")
+})
+
 app.get('/api/news', async (req, res) => {
   try {
     var news = await modules.fetchXml(newsXml)
